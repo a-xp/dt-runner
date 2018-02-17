@@ -1,0 +1,13 @@
+server:
+  port: 9004
+deploy:
+  artifacts:
+    root: /data/soa/
+    maxJarSize: 100_000_000
+    srcServers: gitlab.dev,central.maven.org
+  scripts:
+    cronPath: /data/soa/cron
+    servicePath: /etc/init.d
+spring:
+  application:
+    name: deploy-runner
