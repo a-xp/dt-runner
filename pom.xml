@@ -93,7 +93,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>nexus1</id>
 			<name>Main repo</name>
-			<url>http://java-axp.ddns.net:8081/repository/maven-local/</url>
+			<url>http://java-axp.ddns.net:8081/repository/local-builds/</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
