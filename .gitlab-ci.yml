@@ -1,0 +1,11 @@
+stages:
+  - test
+  - build
+build:
+  stage: build
+  script:
+    - mvn deploy -B
+  only:
+    - master
+  tags:
+    - java

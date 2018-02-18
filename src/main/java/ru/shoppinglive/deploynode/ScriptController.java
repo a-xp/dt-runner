@@ -35,5 +35,4 @@ public class ScriptController {
         return scriptService.createCronScript(scriptMeta)?
                 ResponseEntity.accepted().build():ResponseEntity.badRequest().build();
     }
-
 }

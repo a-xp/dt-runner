@@ -1,5 +1,5 @@
 server:
-  port: 9004
+  port: 0
 deploy:
   artifacts:
     root: /data/soa/
@@ -11,3 +11,10 @@ deploy:
 spring:
   application:
     name: deploy-runner
+eureka:
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
